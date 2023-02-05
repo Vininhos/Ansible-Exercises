@@ -1,0 +1,20 @@
+web01 ansible_host=192.168.56.11
+web02 ansible_host=192.168.56.12
+web03 ansible_host=192.168.56.10
+db01 ansible_host=192.168.56.13
+
+[websrvgrp]
+web01
+web02
+web03
+
+[dbsrvgrp]
+db01
+
+[dc_ohio:children]
+websrvgrp
+dbsrvgrp
+
+[dc_ohio:vars]
+ansible_user=vagrant
+ansible_ssh_private_key_file=vprofile-key.pem
