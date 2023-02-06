@@ -1,0 +1,12 @@
+---
+# defaults file for post-install
+usernames:
+- user11
+- user12
+- user13
+- user14
+ntp0: 0.centos.pool.ntp.org
+ntp1: 1.centos.pool.ntp.org
+ntp2: 2.centos.pool.ntp.org
+ntp3: 3.centos.pool.ntp.org
+ntp_path: /etc/ntp.conf
